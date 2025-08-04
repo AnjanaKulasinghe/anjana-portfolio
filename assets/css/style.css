@@ -164,6 +164,26 @@ body {
     overflow: hidden;
 }
 
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    /* Needed for z-index to work */
+    z-index: 2;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -533,6 +553,7 @@ body {
     position: absolute;
     pointer-events: none;
     opacity: 0.6;
+    z-index: 0;
 }
 
 .floating-element:nth-child(1) {
