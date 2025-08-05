@@ -184,6 +184,37 @@ body {
     z-index: 2;
 }
 
+
+.btn-download-cv {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: rgba(255, 255, 255, 0.2);
+    /* You can change this */
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    gap: 25px;
+    justify-content: center;
+    animation: fadeInUp 1s ease-out 0.6s both;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-download-cv a:hover::before {
+    left: 100%;
+}
+
+.btn-download-cv:hover {
+    transform: scale(1.2) rotate(10deg);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.2),
+        0 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
