@@ -1247,12 +1247,33 @@ body {
     margin-top: 10px;
 }
 
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .games-row {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 20px 10px;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.games-row::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
 }
 
 .game-card {
@@ -1260,10 +1281,11 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    max-width: 250px;
-    flex: 1 1 250px;
+    min-width: 280px;
+    flex: 0 0 280px;
     text-align: center;
     transition: transform 0.2s ease;
+    scroll-snap-align: center;
 }
 
 .game-card:hover {
@@ -1277,8 +1299,60 @@ body {
 }
 
 .game-card h3 {
-    margin-bottom: 10px;
-    font-size: 1.2em;
+    margin-bottom: 5px;
+    font-size: 1.25em;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.game-tagline {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.slider-btn {
+    background: rgba(44, 62, 80, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+.slider-btn:hover {
+    background: #3498db;
+    transform: scale(1.1);
+}
+
+.slider-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+@media (max-width: 768px) {
+    .slider-btn {
+        display: none;
+    }
+
+    .games-row {
+        gap: 20px;
+        padding: 10px 5px;
+    }
+
+    .game-card {
+        min-width: 240px;
+        flex: 0 0 240px;
+    }
 }
 
 
@@ -1295,6 +1369,16 @@ body {
 
     .section {
         padding: 60px 15px;
+    }
+
+    .companies-section {
+        margin: 40px 0;
+        padding: 40px 15px;
+    }
+
+    .footer {
+        padding: 40px 15px;
+        text-align: center;
     }
 
     .companies-grid {
