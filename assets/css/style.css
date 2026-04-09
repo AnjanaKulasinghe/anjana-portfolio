@@ -2283,6 +2283,14 @@ body.menu-open {
     text-shadow: 0 0 15px rgba(0, 120, 200, 0.2);
 }
 
+.section-light .skill-description {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.section-light .skill-text {
+    color: rgba(0, 0, 0, 0.8);
+}
+
 .section-light .skill-item {
     background: linear-gradient(135deg, rgba(0, 120, 200, 0.12) 0%, rgba(0, 120, 200, 0.08) 100%);
     color: rgba(0, 0, 0, 0.85);
@@ -2661,10 +2669,31 @@ blockquote strong:last-of-type {
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 0.1em;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     color: #00f0ff;
     text-align: center;
     text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+}
+
+.skill-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.skill-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    padding: 0 10px;
+    margin: 0;
 }
 
 .skill-list {
@@ -2673,6 +2702,8 @@ blockquote strong:last-of-type {
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
+    margin-top: 0;
+    padding: 0;
 }
 
 .skill-item {
@@ -3366,6 +3397,16 @@ blockquote strong:last-of-type {
         grid-template-columns: 1fr;
     }
 
+    .skill-description {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .skill-text {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
     .companies-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -3556,6 +3597,16 @@ blockquote strong:last-of-type {
 
     .section {
         padding: 60px 15px;
+    }
+
+    .skill-description {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .skill-text {
+        font-size: 13px;
+        line-height: 2;
     }
 
     .companies-section {
