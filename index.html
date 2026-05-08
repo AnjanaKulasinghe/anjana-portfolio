@@ -857,10 +857,15 @@
             <h2 class="section-title">COMMERCIAL PRODUCTS</h2>
         </div>
 
-        <div class="about-content">
-            <div class="services">
+        <div class="slider-container">
+            <button class="slider-btn prev" id="prevProductBtn" aria-label="Previous Product">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+            </button>
+            <div class="services games-row" id="productsRow">
                 <!-- KoungaClub Column -->
-                <div class="service">
+                <div class="service game-card">
                     <a href="https://www.koungaclub.com/" target="_blank" style="text-decoration:none;">
                         <img src="./assets/img/koungaclub-logo.avif" alt="KoungaClub logo"
                             style="max-width: 120px; margin-bottom: 1.5rem; opacity: 0.9;" />
@@ -904,7 +909,7 @@
                 </div>
 
                 <!-- PerkyLoop Column -->
-                <div class="service">
+                <div class="service game-card">
                     <a href="https://perkyloop.com/" target="_blank" style="text-decoration:none;">
                         <img src="./assets/img/perkyloop.avif" alt="PerkyLoop logo"
                             style="max-width: 120px; margin-bottom: 1.5rem; opacity: 0.9;" />
@@ -947,7 +952,7 @@
                 </div>
 
                 <!-- BodyProgress Column -->
-                <div class="service">
+                <div class="service game-card">
                     <a href="https://bodyprogress.koungasolutions.co.nz/" target="_blank" style="text-decoration:none;">
                         <img src="./assets/img/body.avif" alt="BodyProgress logo"
                             style="max-width: 120px; margin-bottom: 1.5rem; opacity: 0.9;" />
@@ -987,7 +992,63 @@
                         </p>
                     </a>
                 </div>
+
+                <!-- TripMate Column -->
+                <div class="service game-card">
+                    <a href="https://play.google.com/store/apps/details?id=nz.co.koungasolutions.koungatripmate"
+                        target="_blank" style="text-decoration:none;">
+                        <img src="./assets/img/games/tripmate.avif" alt="TripMate logo"
+                            style="max-width: 120px; margin-bottom: 1.5rem; opacity: 0.9;" />
+                        <h3>TripMate</h3>
+
+                        <div class="product-intro" style="margin-top: 1.5rem; margin-bottom: 1.5rem; text-align: left;">
+                            <div
+                                style="font-weight: 700; color: #00f0ff; text-transform: uppercase; margin-bottom: 0.5rem; font-size: 0.9em; text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);">
+                                Smart Travel Planning & Group Trip Management Platform
+                            </div>
+                            <p
+                                style="font-size: 0.95rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); text-align: left;">
+                                I designed and built TripMate, a modern travel companion app focused on simplifying
+                                group travel planning, itinerary management, and trip coordination. The platform
+                                combines collaborative planning tools with offline-friendly travel utilities to create a
+                                seamless experience for travellers before and during their journeys.
+                            </p>
+                        </div>
+
+                        <p style="text-align: left;">
+                            – Built and launched a cross-platform mobile application with a clean, modern travel-focused
+                            user experience<br>
+                            – Collaborative trip management with shared itineraries, member coordination, and real-time
+                            travel organisation<br>
+                            – Expense tracking and trip budgeting features designed for group travel scenarios<br>
+                            – Offline document and travel information access for reliability while travelling
+                        </p>
+
+                        <div style="margin-top: 1.5rem; display: flex; gap: 12px; flex-wrap: wrap;">
+                            <a href="https://play.google.com/store/apps/details?id=nz.co.koungasolutions.koungatripmate"
+                                target="_blank" class="btn-download-cv" style="text-decoration:none;">
+                                View TripMate
+                            </a>
+                        </div>
+
+                        <p style="margin-top: 1.5rem; color: #cfd8dc; font-size: 0.95rem; text-align: left;">
+                            <strong>Focus areas:</strong> Mobile app development · Travel technology · Collaborative
+                            planning · Offline-first experience
+                        </p>
+                    </a>
+                </div>
             </div>
+            <button class="slider-btn next" id="nextProductBtn" aria-label="Next Product">
+                <svg viewBox="0 0 24 24">
+                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+            </button>
+        </div>
+        <div class="scroll-indicators" id="productIndicators">
+            <span class="indicator active" data-index="0"></span>
+            <span class="indicator" data-index="1"></span>
+            <span class="indicator" data-index="2"></span>
+            <span class="indicator" data-index="3"></span>
         </div>
     </section>
 
@@ -1077,10 +1138,19 @@
                     <img src="./assets/img/games/pegra.avif" alt="Pegra Game Art">
                     <h3>Pegra</h3>
                     <p class="game-tagline">Classic Peg Puzzle Perfected</p>
-                    <a href="https://apps.apple.com/nz/app/pegra/id6760956411" target="_blank">
-                        <img src="./assets/img/games/app-store-badge.svg" alt="Download on the App Store"
-                            class="app-store-badge">
-                    </a>
+                    <div
+                        style="display: flex; gap: 10px; justify-content: center; align-items: center; margin-top: 10px;">
+                        <a href="https://apps.apple.com/nz/app/pegra/id6760956411" target="_blank"
+                            style="flex: 1; display: flex; justify-content: center;">
+                            <img src="./assets/img/games/app-store-badge.svg" alt="Download on the App Store"
+                                class="app-store-badge">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.koungagames.pegra" target="_blank"
+                            style="flex: 1; display: flex; justify-content: center;">
+                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                alt="Get it on Google Play" class="app-store-badge">
+                        </a>
+                    </div>
                 </div>
                 <div class="game-card">
                     <img src="./assets/img/games/sudoku.avif" alt="Sudoku Game Art">
@@ -1097,6 +1167,12 @@
                     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
                 </svg>
             </button>
+        </div>
+        <div class="scroll-indicators" id="gameIndicators">
+            <span class="indicator active" data-index="0"></span>
+            <span class="indicator" data-index="1"></span>
+            <span class="indicator" data-index="2"></span>
+            <span class="indicator" data-index="3"></span>
         </div>
     </section>
 
@@ -1390,10 +1466,11 @@
                 }
             }, { passive: true });
 
-            // Slider Logic
+            // Slider Logic for Games
             const gamesRow = document.getElementById('gamesRow');
             const prevBtn = document.getElementById('prevBtn');
             const nextBtn = document.getElementById('nextBtn');
+            const gameIndicators = document.querySelectorAll('#gameIndicators .indicator');
 
             if (gamesRow && prevBtn && nextBtn) {
                 prevBtn.addEventListener('click', () => {
@@ -1404,19 +1481,131 @@
                     gamesRow.scrollBy({ left: 300, behavior: 'smooth' });
                 });
 
-                // Optional: Hide/Show buttons based on scroll position
-                const toggleButtons = () => {
+                // Helper function to get current gap
+                const getGap = () => {
+                    const cards = gamesRow.querySelectorAll('.game-card');
+                    if (cards.length > 1) {
+                        const gap = cards[1].offsetLeft - (cards[0].offsetLeft + cards[0].offsetWidth);
+                        return gap;
+                    }
+                    return 30; // fallback
+                };
+
+                // Indicator click handlers
+                gameIndicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', () => {
+                        const cards = gamesRow.querySelectorAll('.game-card');
+                        if (cards[index]) {
+                            const targetCard = cards[index];
+                            const scrollLeft = targetCard.offsetLeft - gamesRow.offsetLeft;
+                            gamesRow.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+                        }
+                    });
+                });
+
+                // Update indicators and buttons on scroll
+                const updateGameScroll = () => {
                     prevBtn.style.opacity = gamesRow.scrollLeft <= 0 ? '0.3' : '1';
                     prevBtn.style.pointerEvents = gamesRow.scrollLeft <= 0 ? 'none' : 'auto';
 
                     const maxScroll = gamesRow.scrollWidth - gamesRow.clientWidth;
                     nextBtn.style.opacity = gamesRow.scrollLeft >= maxScroll - 5 ? '0.3' : '1';
                     nextBtn.style.pointerEvents = gamesRow.scrollLeft >= maxScroll - 5 ? 'none' : 'auto';
+
+                    // Update indicators - find closest card
+                    const cards = gamesRow.querySelectorAll('.game-card');
+                    const scrollPosition = gamesRow.scrollLeft;
+                    let currentIndex = 0;
+                    let minDistance = Infinity;
+
+                    cards.forEach((card, index) => {
+                        const cardPosition = card.offsetLeft - gamesRow.offsetLeft;
+                        const distance = Math.abs(scrollPosition - cardPosition);
+                        if (distance < minDistance) {
+                            minDistance = distance;
+                            currentIndex = index;
+                        }
+                    });
+
+                    gameIndicators.forEach((indicator, index) => {
+                        indicator.classList.toggle('active', index === currentIndex);
+                    });
                 };
 
-                gamesRow.addEventListener('scroll', toggleButtons);
-                window.addEventListener('resize', toggleButtons);
-                toggleButtons(); // Initial call
+                gamesRow.addEventListener('scroll', updateGameScroll);
+                window.addEventListener('resize', updateGameScroll);
+                updateGameScroll(); // Initial call
+            }
+
+            // Slider Logic for Products
+            const productsRow = document.getElementById('productsRow');
+            const prevProductBtn = document.getElementById('prevProductBtn');
+            const nextProductBtn = document.getElementById('nextProductBtn');
+            const productIndicators = document.querySelectorAll('#productIndicators .indicator');
+
+            if (productsRow && prevProductBtn && nextProductBtn) {
+                prevProductBtn.addEventListener('click', () => {
+                    productsRow.scrollBy({ left: -350, behavior: 'smooth' });
+                });
+
+                nextProductBtn.addEventListener('click', () => {
+                    productsRow.scrollBy({ left: 350, behavior: 'smooth' });
+                });
+
+                // Helper function to get current gap
+                const getProductGap = () => {
+                    const cards = productsRow.querySelectorAll('.service');
+                    if (cards.length > 1) {
+                        const gap = cards[1].offsetLeft - (cards[0].offsetLeft + cards[0].offsetWidth);
+                        return gap;
+                    }
+                    return 30; // fallback
+                };
+
+                // Indicator click handlers
+                productIndicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', () => {
+                        const cards = productsRow.querySelectorAll('.service');
+                        if (cards[index]) {
+                            const targetCard = cards[index];
+                            const scrollLeft = targetCard.offsetLeft - productsRow.offsetLeft;
+                            productsRow.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+                        }
+                    });
+                });
+
+                // Update indicators and buttons on scroll
+                const updateProductScroll = () => {
+                    prevProductBtn.style.opacity = productsRow.scrollLeft <= 0 ? '0.3' : '1';
+                    prevProductBtn.style.pointerEvents = productsRow.scrollLeft <= 0 ? 'none' : 'auto';
+
+                    const maxScroll = productsRow.scrollWidth - productsRow.clientWidth;
+                    nextProductBtn.style.opacity = productsRow.scrollLeft >= maxScroll - 5 ? '0.3' : '1';
+                    nextProductBtn.style.pointerEvents = productsRow.scrollLeft >= maxScroll - 5 ? 'none' : 'auto';
+
+                    // Update indicators - find closest card
+                    const cards = productsRow.querySelectorAll('.service');
+                    const scrollPosition = productsRow.scrollLeft;
+                    let currentIndex = 0;
+                    let minDistance = Infinity;
+
+                    cards.forEach((card, index) => {
+                        const cardPosition = card.offsetLeft - productsRow.offsetLeft;
+                        const distance = Math.abs(scrollPosition - cardPosition);
+                        if (distance < minDistance) {
+                            minDistance = distance;
+                            currentIndex = index;
+                        }
+                    });
+
+                    productIndicators.forEach((indicator, index) => {
+                        indicator.classList.toggle('active', index === currentIndex);
+                    });
+                };
+
+                productsRow.addEventListener('scroll', updateProductScroll);
+                window.addEventListener('resize', updateProductScroll);
+                updateProductScroll(); // Initial call
             }
 
             // Toggle menu on hamburger click

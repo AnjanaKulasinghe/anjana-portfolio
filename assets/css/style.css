@@ -2971,6 +2971,31 @@ blockquote strong:last-of-type {
     color: rgba(255, 255, 255, 0.7);
 }
 
+/* Product Slider Specific Styles */
+#product .services {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 20px 10px;
+    margin-top: 30px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#product .services::-webkit-scrollbar {
+    display: none;
+}
+
+#product .service {
+    min-width: 350px;
+    flex: 0 0 350px;
+    scroll-snap-align: center;
+}
+
 /* Skills Section */
 .skills-grid {
     display: grid;
@@ -3831,6 +3856,8 @@ blockquote strong:last-of-type {
 
 .app-store-badge {
     width: 140px;
+    height: 48px;
+    object-fit: contain;
     margin-top: 10px;
 }
 
@@ -3976,6 +4003,70 @@ blockquote strong:last-of-type {
         min-width: 240px;
         flex: 0 0 240px;
     }
+
+    #product .services {
+        gap: 20px;
+        padding: 10px 5px;
+        padding-right: 50px;
+        /* Show a bit of the next card */
+    }
+
+    #product .service {
+        min-width: 85vw;
+        flex: 0 0 85vw;
+        /* Show partial view of next card */
+    }
+}
+
+/* Scroll Indicators */
+.scroll-indicators {
+    display: none;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .scroll-indicators {
+        display: flex;
+    }
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+.indicator.active {
+    background: #00f0ff;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+    transform: scale(1.2);
+}
+
+.indicator:hover {
+    background: rgba(0, 240, 255, 0.6);
+}
+
+/* Game Section Indicators - Dark colors for light background */
+#game-dev .scroll-indicators .indicator {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+#game-dev .scroll-indicators .indicator.active {
+    background: #3b82f6;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+    transform: scale(1.2);
+}
+
+#game-dev .scroll-indicators .indicator:hover {
+    background: rgba(59, 130, 246, 0.5);
 }
 
 
