@@ -3929,7 +3929,46 @@ blockquote strong:last-of-type {
     border-color: rgba(0, 240, 255, 0.4);
 }
 
-.game-card img:first-child {
+/* Product Logo Container */
+.product-logo-container {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.product-logo-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.game-card:hover .product-logo-container {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 25px rgba(0, 240, 255, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.08);
+    border-color: rgba(0, 240, 255, 0.2);
+}
+
+.game-card:hover .product-logo-container img {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Legacy game card images (for non-product cards) */
+.game-card img:first-child:not(.product-logo-container img) {
     width: 100%;
     border-radius: 12px;
     margin-bottom: 15px;
@@ -3937,7 +3976,7 @@ blockquote strong:last-of-type {
     transition: all 0.3s ease;
 }
 
-.game-card:hover img:first-child {
+.game-card:hover img:first-child:not(.product-logo-container img) {
     transform: scale(1.03);
     box-shadow: 0 8px 25px rgba(0, 240, 255, 0.2);
 }
