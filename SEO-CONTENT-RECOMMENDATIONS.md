@@ -41,18 +41,18 @@ The owner has approved these subjects as future topics, not publication or desig
 - **Potential visual impact:** New page medium/high; changing existing product content is visible and requires review.
 - **Priority / approval:** Medium; topic approved. Confirm individual role and AI feature status; publication and presentation require separate approval.
 
-## 4. Applied AI product case study — Kounga Engage
+## 4. Engineering-led product case study — Kounga Engage
 
-- **Suggested title:** *Building Practical AI-Powered Software Products: Lessons from Kounga Engage*
-- **Purpose:** Present AI application engineering as practical product work, not AI research or model training.
+- **Suggested title:** *Engineering a Customer Engagement Product with Applied AI: Kounga Engage*
+- **Purpose:** Present AI as one purposeful capability within engineering-led product work, not as Anjana's sole identity, AI research or model training.
 - **Outline:** Business problem and audience; where conversational AI fits; voice and avatar interaction flow; integration boundaries and human handoff; latency/reliability/privacy considerations; performance and operating-cost trade-offs; current development/release status; lessons and limitations.
 - **Available supporting evidence:** The owner supplied the official URL and described an AI-powered customer engagement platform under Kounga Solutions with conversational AI, real-time voice interactions and virtual agents.
-- **Verification status:** The official website could not be fetched by available tooling, so the described capabilities are not independently verified. Commercial availability, customer adoption and development status are also unverified. Details about integrations/vendors, feature availability, privacy/security review and Anjana's contribution boundaries remain unconfirmed.
+- **Verification status:** The official website returned HTTP 200 in a direct request; this confirms reachability only. The listed capabilities remain owner-confirmed rather than independently verified. Commercial availability, customer adoption and development status are unverified. Details about integrations/vendors, feature availability, privacy/security review and Anjana's contribution boundaries remain unconfirmed.
 - **Search opportunity:** Anjana Kulasinghe AI, conversational AI applications, real-time voice interaction and practical AI product engineering.
-- **Personal brand benefit:** Makes applied AI a high-priority dimension of the entrepreneurial/product journey while accurately distinguishing it from ML research.
-- **Recommended presentation:** Draft outline only until public evidence and status are supplied; do not add product or AI feature claims to public schema yet.
-- **Potential visual impact:** New case-study page high; a future short description in existing product area would still be visible and needs separate approval.
-- **Priority / approval:** High, matching the owner's applied-AI priority; topic approved. Public content, product schema and page design remain unapproved pending independently verifiable evidence and separate approval.
+- **Personal brand benefit:** Shows applied AI as one dimension of Anjana's engineering-led entrepreneurial and product journey while accurately distinguishing it from ML research.
+- **Recommended presentation:** The owner authorized the prominent feature in the existing portfolio section. The displayed capabilities are owner-confirmed; site reachability does not independently verify them. Do not add Product schema or claim commercial availability, customer adoption or a particular development/release state without evidence.
+- **Potential visual impact:** Implemented as a custom flagship feature within the existing product section; no new page or section was added.
+- **Priority / approval:** High, reflecting the applied-AI dimension of this product. The owner authorized this portfolio presentation. Any future case study, separate page or product schema needs its own evidence and approval.
 
 ## 5. Entrepreneurial journey and professional evolution
 
@@ -77,7 +77,8 @@ The owner has approved these subjects as future topics, not publication or desig
 | TripMate | Existing portfolio entry, official product URL and Apple developer listing. | Verify current release status and individual contribution before extending claims. |
 | Pegra | Existing Side Quests entry and Apple listing under AJ&W developer account. | Company/publisher association supported; individual role is not independently established by store listing. |
 | BumpStory | Apple listing names AJ&W Consulting Limited as provider. | Not currently represented on portfolio; status/product description supported by store listing. Confirm individual contribution before adding visibly. |
-| Kounga Engage | Owner supplied the official URL, [engage.koungasolutions.co.nz](https://engage.koungasolutions.co.nz/), and described an AI-powered customer engagement platform under Kounga Solutions involving conversational AI, real-time voice interactions and virtual agents. The official site could not be fetched by available tooling, so those capabilities remain owner-described, not independently verified. Commercial availability, customer adoption and development status are unverified. | Do not make public product/schema claims until the official page is accessible and those details are confirmed. Keep its proposed case study unpublished. |
+| Kounga Engage | The owner identifies [engage.koungasolutions.co.nz](https://engage.koungasolutions.co.nz/) as the official site and confirms the platform was developed under Kounga Solutions, with conversational AI, real-time voice interactions and virtual agents. A direct request returned HTTP 200; this verifies reachability, not product details. Commercial availability, customer adoption and current development/release status are unknown. | Its authorized description is already present in the existing portfolio section. Do not add Product schema or make launch, availability or adoption claims until verified. Keep the proposed case study unpublished. |
+| QuizForge | The owner supplied [quizforge.koungasolutions.co.nz](https://quizforge.koungasolutions.co.nz/) for the product list; a direct request returned HTTP 200. Search results included unrelated products with the same name and were not used. | A minimal card was added at the end of the existing grid using a generic quiz-platform description. Specific features, availability, adoption and development/release status remain unverified; do not add further claims or Product schema until confirmed. |
 | ReleaseLens AI | Owner confirms this is a software quality and release intelligence development initiative associated with Anjana Kulasinghe. Public availability is not independently confirmed; similarly named third-party products are unrelated absent attribution evidence. | Classify as a development initiative, not a commercially launched product. Do not attribute third-party products or make launch/adoption claims. |
 | Other products | Apple developer account includes additional games/apps, including Dumb or Genius. | Decide which are materially relevant to the personal portfolio; confirm role and status before adding.
 

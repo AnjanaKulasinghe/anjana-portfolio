@@ -2,7 +2,7 @@
 
 ## Positioning
 
-**Technology Leader · Entrepreneur · Product Creator** is the primary identity. Supporting areas are quality engineering, test automation architecture, software product development and applied AI. Tell the journey from engineering practice and technical leadership into founding a technology company and building products. Use genuine work and product evidence; do not frame the site as a résumé or consultancy sales page.
+**Technology Leader · Entrepreneur · Product Creator** is the primary identity. Anjana's 16+ years in quality engineering, automation architecture, complex systems and technical problem-solving form the engineering foundation. Applied AI is one part of his evolving expertise and a purposeful enabler in products such as Kounga Engage, not a substitute for human judgement or technical ownership. Describe AI adoption as human-led, verified and tied to real requirements; do not imply AI independently designs, builds or validates products. Tell the journey from engineering practice and technical leadership into founding a technology company and creating products. Use genuine work and product evidence; do not frame the site as a résumé or consultancy sales page.
 
 ## Entity strategy
 
@@ -24,7 +24,7 @@ This is a one-page site; section anchors are not separate canonical landing page
 | Anjana Kulasinghe entrepreneur / Kounga Solutions | About, profile schema and existing product area | Explain founder role and company relationship without duplicating corporate service copy. |
 | Anjana Kulasinghe quality engineering / test automation | About and Technical Skills | Emphasise large-scale engineering work and first-hand practice; keep client details confidential. |
 | Anjana Kulasinghe software products | Existing product area and company/product links | Use owner role and product status carefully; company publisher is distinct from individual contribution. |
-| Anjana Kulasinghe AI / artificial intelligence | Existing AI workflow content, Person `knowsAbout`, future Kounga Engage outline | Describe applied integration and product engineering, not research/model training. |
+| Anjana Kulasinghe AI / artificial intelligence | Existing Kounga Engage feature and Person `knowsAbout` | Present AI as applied engineering within a broader technology profile, not research/model training or the primary identity. The owner confirms the capability details; the official URL is reachable, while commercial availability, adoption and development status remain unverified. |
 | Generic quality engineering, SaaS or AI software terms | No dedicated page | Defer until original approved case studies and separate page/design approval. |
 
 ## Authority, AI discoverability and ecosystem

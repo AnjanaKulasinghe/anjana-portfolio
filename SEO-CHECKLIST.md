@@ -6,6 +6,7 @@ For each future portfolio update:
 - [ ] Keep entity relationships accurate: Person Anjana Kulasinghe; legal organization AJ&W Consulting Limited; trading identity Kounga Solutions; publishing brand Kounga Games.
 - [ ] Confirm any company number/current legal status from an official register source before adding those details to structured data.
 - [ ] Validate every biographical, experience, certification, company and product claim against an owner-approved source.
+- [ ] Lead with engineering expertise, human judgement and technical ownership; describe AI as a purposeful enabler, not as a replacement for engineering work.
 - [ ] Keep personal portfolio, Kounga Solutions and product website roles distinct.
 - [ ] Keep title and meta description accurate, unique to the page and readable.
 - [ ] Keep the canonical URL, sitemap and public crawl policy in agreement.
