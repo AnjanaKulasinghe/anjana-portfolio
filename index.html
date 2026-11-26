@@ -503,6 +503,8 @@
     }
 
     const contactForm = document.querySelector('#contactForm');
+    const emailJsPublicKey = "eVm1h90yHt9AN6e14";
+    let emailJsInitialized = false;
     contactForm.addEventListener('submit', async event => {
       event.preventDefault();
       const status = document.querySelector('#formStatus');
@@ -511,6 +513,10 @@
       button.disabled = true;
       button.firstChild.textContent = 'Sending… ';
       try {
+        if (!emailJsInitialized) {
+          emailjs.init({ publicKey: emailJsPublicKey });
+          emailJsInitialized = true;
+        }
         await emailjs.send('service_rb8xesu', 'template_vfdhrvg', {
           name: contactForm.elements.name.value,
           email: contactForm.elements.email.value,
